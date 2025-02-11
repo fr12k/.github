@@ -1,0 +1,21 @@
+version: 1.0.0
+
+approve:
+  approver: fr12k
+  include:
+    branches:
+      dependabot_golang:
+        prefix: "dependabot/go_modules"
+      dependabot_npm:
+        prefix: "dependabot/npm_and_yarn"
+
+merge:
+  include:
+    branches:
+      dependabot_golang:
+        age: 2 days
+        prefix: "dependabot/go_modules"
+      dependabot_npm:
+        age: 2 days
+        prefix: "dependabot/npm_and_yarn"
+  method: squash
