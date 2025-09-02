@@ -13,9 +13,9 @@ merge:
   include:
     branches:
       dependabot_golang:
-        age: 2 days
+        age: 1 days
         prefix: "dependabot/go_modules"
       dependabot_npm:
-        age: 2 days
+        age: 1 days
         prefix: "dependabot/npm_and_yarn"
   method: squash
