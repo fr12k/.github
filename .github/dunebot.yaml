@@ -4,6 +4,8 @@ approve:
   approver: fr12k
   include:
     branches:
+      dependabot_github_action:
+        prefix: "dependabot/github_actions"
       dependabot_golang:
         prefix: "dependabot/go_modules"
       dependabot_npm:
@@ -12,6 +14,8 @@ approve:
 merge:
   include:
     branches:
+      dependabot_github_action:
+        prefix: "dependabot/github_actions"
       dependabot_golang:
         age: 1 days
         prefix: "dependabot/go_modules"
